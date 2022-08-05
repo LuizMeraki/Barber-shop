@@ -1,0 +1,119 @@
+/* Temas da Página */
+
+.tema-light {
+     color: #000;
+     background-color: #fff;
+     transition: .4s;
+}
+
+.tema-dark {
+     color: #fff;
+     background-color: #111111;
+     transition: .4s;
+}
+
+/* Cabeçalho */
+
+header {
+     padding: 0 1.2rem;
+}
+
+.menu {
+     width: 100%;
+     margin: 0 auto;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.menu-logo {
+     width: 75px;
+}
+
+.img-botao-tema-light,
+.img-botao-tema-dark {
+     width: 23px;
+     margin-right: .6rem;
+     position: relative;
+     left: -30%;
+     transition: .4s;
+}
+
+.img-botao-tema-dark {
+     left: 65%;
+     transition: .4s;
+}
+
+.botao-estilo-light,
+.botao-estilo-dark {
+     background-color: unset;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 0rem .6rem;
+     border: 2px solid #7b7b7b;
+     border-radius: 2rem;
+     cursor: pointer;
+}
+
+.botao-estilo-dark {
+     border: 2px solid #262626;
+}
+
+
+/* SEÇÃO BANNER */
+
+#secao-banner {
+     height: 350px;
+     background-image: url('/public/assets/banner-barbearia.jpg');
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+}
+
+/* SEÇÃO APRESENTAÇÃO */
+
+.box-titulo,
+.box-texto,
+.box-assinatura {
+     text-align: center;
+}
+
+.box-titulo {
+     margin-bottom: 2rem;
+}
+
+.box-titulo h1 {
+     font-size: 1.7rem;
+}
+
+.box-texto p {
+     line-height: 30px;
+}
+
+.box-texto p:first-of-type {
+     font-weight: 600;
+     margin-bottom: 1.3rem;
+}
+
+.box-assinatura {
+     margin-top: 3rem;
+}
+
+.box-assinatura span {
+     color: #c094b5;
+     font-size: 3rem;
+     font-family: 'Great Vibes', sans-serif;
+}
+
+/* MEDIA QUERY */
+
+@media (max-width: 500px) {
+     .img-botao-tema {
+          width: 18px;
+     }
+     .botao-estilo-light,
+     .botao-estilo-dark {
+          padding: .2rem .6rem;
+     }
+}
