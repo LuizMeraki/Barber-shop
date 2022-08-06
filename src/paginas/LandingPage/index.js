@@ -3,6 +3,8 @@ import './style.css';
 
 // Imagens
 import barbearia_logo from '../../assets/barbearia-logo.png';
+import icone_moon from '../../assets/moon.png';
+import icone_sun from '../../assets/sun.png';
 
 export default function LandingPage(){
 
@@ -12,8 +14,8 @@ export default function LandingPage(){
      const [alterarCorTema, setAlterarCorTema] = useState(true);
 
      // Logo do botão de tema
-     const logo_light = '../../assets/sun.png';
-     const logo_dark = '../../assets/moon.png';
+     const logo_light = icone_sun;
+     const logo_dark = icone_moon; 
 
      // Posição Logo botão de tema
      const img_botao_tema_light = 'img-botao-tema-light'
