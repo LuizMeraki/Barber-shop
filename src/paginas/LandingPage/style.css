@@ -65,7 +65,7 @@ header {
 
 #secao-banner {
      height: 350px;
-     background-image: url('/public/assets/banner-barbearia.jpg');
+     background-image: url('../../assets/banner-barbearia.jpg');
      background-repeat: no-repeat;
      background-size: cover;
      background-position: center;

@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './style.css';
 
+// Imagens
+import barbearia_logo from '../../assets/barbearia-logo.png';
 
 export default function LandingPage(){
 
@@ -10,8 +12,8 @@ export default function LandingPage(){
      const [alterarCorTema, setAlterarCorTema] = useState(true);
 
      // Logo do botão de tema
-     const logo_light = 'assets/sun.png';
-     const logo_dark = 'assets/moon.png';
+     const logo_light = '../../assets/sun.png';
+     const logo_dark = '../../assets/moon.png';
 
      // Posição Logo botão de tema
      const img_botao_tema_light = 'img-botao-tema-light'
@@ -30,10 +32,10 @@ export default function LandingPage(){
           <div className={ alterarCorTema ? tema_light : tema_dark }>
                <header>
                     <div className='menu limite-secao'>
-                         <img className='menu-logo' src='assets/barbearia-logo.png' alt='Logo Barber Shop'></img>
+                         <img className='menu-logo' src={ barbearia_logo } alt='Logo Barber Shop'></img>
                          <div className='box-header-button'>
                               <button className={ alterarCorTema ? botao_estilo_light : botao_estilo_dark } onClick={ alterarEstilos }>
-                                   <img className={ alterarCorTema ? img_botao_tema_light : img_botao_tema_dark } src={ alterarCorTema ? logo_light : logo_dark }></img>
+                                   <img className={ alterarCorTema ? img_botao_tema_light : img_botao_tema_dark } src={ alterarCorTema ? logo_light : logo_dark } alt='Ícone botão de tema'></img>
                               </button>
                          </div>
                     </div>
